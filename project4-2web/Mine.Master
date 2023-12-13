@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mine.master.cs" Inherits="project4_2web.Mine" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1>WELCOME TO THE RAINBOW SCHOOL MANAGEMENT</h1>
+            <h5> Here you can manage our classes , students , and subjects  </h5>
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                no<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
